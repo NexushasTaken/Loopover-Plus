@@ -1,0 +1,16 @@
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\bin\Debug\netcoreapp3.1\Loopover Plus.exe
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\bin\Debug\netcoreapp3.1\Loopover Plus.deps.json
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\bin\Debug\netcoreapp3.1\Loopover Plus.runtimeconfig.json
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\bin\Debug\netcoreapp3.1\Loopover Plus.runtimeconfig.dev.json
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\bin\Debug\netcoreapp3.1\Loopover Plus.dll
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\bin\Debug\netcoreapp3.1\Loopover Plus.pdb
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.AssemblyInfoInputs.cache
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.AssemblyInfo.cs
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.csproj.CoreCompileInputs.cache
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.dll
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.pdb
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.genruntimeconfig.cache
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.csproj.AssemblyReference.cache
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nexus\Workspace\Loopover Plus\Loopover Plus\obj\Debug\netcoreapp3.1\Loopover Plus.csproj.CopyComplete

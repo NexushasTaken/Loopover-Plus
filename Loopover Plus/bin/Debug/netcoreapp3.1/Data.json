@@ -1,0 +1,49 @@
+{
+  "Controls": {
+    "CursorData": {
+      "CUp": 38,
+      "CDown": 40,
+      "CLeft": 37,
+      "CRight": 39
+    },
+    "Move": {
+      "MUp": 87,
+      "MDown": 83,
+      "MLeft": 65,
+      "MRight": 68
+    },
+    "Help": 72,
+    "Credits": 67,
+    "Restart": 82,
+    "NewGame": 78,
+    "ExitMenu": 32,
+    "GameMenu": 192
+  },
+  "Saves": {
+    "Save1": {
+      "Size": 3,
+      "X": 2,
+      "Y": 1,
+      "Puzzle": [
+        [
+          65,
+          66,
+          70
+        ],
+        [
+          68,
+          69,
+          67
+        ],
+        [
+          72,
+          73,
+          71
+        ]
+      ],
+      "Date": "3/29/2022 1:38:14 AM",
+      "Name": "Save1"
+    }
+  },
+  "Solves": 5
+}
