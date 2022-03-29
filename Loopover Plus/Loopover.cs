@@ -188,6 +188,7 @@ namespace Loopover_Plus
             Data data = LoadData();
             int size = -1;
             bool win = false;
+            bool restart = false;
 
             EMenus menu = EMenus.Menu;
             EMenus prevMenu = EMenus.None;
@@ -200,14 +201,18 @@ namespace Loopover_Plus
                         {
                             try
                             {
-                                Console.WriteLine("Enter -1 to cancel");
-                                Console.Write("Enter a board size(2-20): ");
-                                size = Convert.ToInt32(Console.ReadLine());
+                                if (!restart)
+                                {
+                                    Console.WriteLine("Enter -1 to cancel");
+                                    Console.Write("Enter a board size(2-20): ");
+                                    size = Convert.ToInt32(Console.ReadLine());
+                                }
                                 if (size > 1 && size <= 20)
                                 {
                                     game = new Loopover(size, data);
                                     menu = EMenus.Game;
                                     win = false;
+                                    restart = false;
                                 }
                                 else if (size == -1)
                                     menu = prevMenu;
@@ -222,14 +227,13 @@ namespace Loopover_Plus
                         {
                             if (game.puzzle.Check() && !win)
                             {
+                                Console.WriteLine("Puzzle Solve!!");
                                 win = true;
                                 data.Solves += 1;
                                 if (game.puzzle.Name != null)
                                     if (data.Saves.ContainsKey(game.puzzle.Name))
                                         data.Saves.Remove(game.puzzle.Name);
                             }
-                            if (win)
-                                Console.WriteLine("Puzzle Solve!!");
                             game.puzzle.Print();
                             ConsoleKey key = Console.ReadKey().Key;
                             ConsoleKey returnKey = game.Move(key, win);
@@ -345,9 +349,8 @@ namespace Loopover_Plus
                                     prevMenu = EMenus.Game;
                                     break;
                                 case ConsoleKey.D3:
-                                    game = new Loopover(size, data);
-                                    menu = EMenus.Game;
-                                    win = false;
+                                    menu = EMenus.Start;
+                                    restart = true;
                                     break;
                                 case ConsoleKey.D4:
                                     menu = EMenus.Start;
@@ -412,6 +415,7 @@ namespace Loopover_Plus
                                     }
                                     Save save = data.Saves[keys[num]];
                                     game = new Loopover(save.Size, save.Puzzle, new Cursor(save.X, save.Y, save.Size), save.Name, data);
+                                    size = save.Size;
                                 }
                                 catch
                                 {
@@ -425,12 +429,7 @@ namespace Loopover_Plus
                         {
                             if (!win)
                             {
-                                if (data.Saves.ContainsKey(game.puzzle.Name))
-                                {
-                                    //string rep = game.puzzle.Name;
-                                    //data.Saves[rep] = new Save(game.puzzle.puzzle, rep, game.puzzle.cursor.Size, game.puzzle.cursor.X, game.puzzle.cursor.Y);
-                                }
-                                else
+                                if (game.puzzle.Name == null)
                                 {
                                 start:
                                     Console.WriteLine("Enter a Name: ");
